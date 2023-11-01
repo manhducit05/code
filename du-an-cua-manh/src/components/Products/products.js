@@ -24,7 +24,7 @@ function Products(){
                 <div className='listProducts'>
                 {
                     data.map((item,_)=>(
-                        <div className='item'>
+                        <div className='item' key={item.id}>
                             <div className='name'>{item.title}</div>
                             <div className='img'><img src={item.thumbnail}/></div>
                             <div className='price'>{item.price}</div>
